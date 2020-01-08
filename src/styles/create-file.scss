@@ -1,0 +1,10 @@
+.file-manager__create-file {
+  &__text-input {
+    padding: 10px 6px;
+    width: 100%;
+    &-container {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+  }
+}

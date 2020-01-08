@@ -1,0 +1,26 @@
+.file-manager__navbar{
+  &__container {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__folder{
+    &-path-wrapper {
+      display:flex;
+      flex: 1 1 auto;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    &-position-text {
+      font-size: 24px;
+      color: #81878C;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .file-manager__navbar__container{
+    flex-direction: column;
+  }
+}

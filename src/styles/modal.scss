@@ -1,0 +1,38 @@
+.file-manager__model {
+  &-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 8, 26, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-wrapper {
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 25px 45px 45px 45px;
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-header {
+    position: relative;
+    margin-bottom: 16px;
+    &-text {
+      font-size: 18px;
+      color: #2F363F;
+      text-align: center;
+    }
+    &-icon {
+      position: absolute;
+      right: 0;
+      top: 2px;
+    }
+  }
+}

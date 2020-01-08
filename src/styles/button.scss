@@ -1,0 +1,17 @@
+
+.file-manager__button {
+  &__main-container {
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__primary-appearance {
+    background-color: #4AB7FF;;
+    border-radius: 10px;
+    color: #FFF;
+  }
+}

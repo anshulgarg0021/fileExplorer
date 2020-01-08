@@ -1,0 +1,22 @@
+.file-manager__toggle {
+  &__container {
+    display: flex;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: solid 1px black;
+    overflow: hidden;
+  }
+  &__unselected {
+    background-color: white;
+    padding: 10px;
+    flex: 1;
+    text-transform: capitalize;
+  }
+  &__selected {
+    background: #4AB7FF;
+    padding: 10px;
+    flex: 1;
+    text-transform: capitalize;
+    color: white;
+  }
+}

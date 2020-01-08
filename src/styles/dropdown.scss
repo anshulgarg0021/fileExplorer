@@ -1,0 +1,19 @@
+.file-manager__dropdown{
+  &-container {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEEFF1;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 10, 35, 0.35);
+  }
+  &-list-item {
+    font-size: 16px;
+    color: #535B62;
+    padding: 12px;
+    text-align: left;
+    &:hover {
+      background-color: #EEEFF1;
+    }
+  }
+}

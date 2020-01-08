@@ -1,0 +1,23 @@
+.file-manager__sidebar{
+  &__container{
+    display: flex;
+    flex: 1 1 250px;
+    flex-direction: column;
+    border: black 1px;
+    background-color: #F9FAFC;
+  }
+  &__header{
+    color: #AFB2B6;
+    padding: 32px 32px 15px 32px;
+  }
+  &__folder {
+    padding: 12px 32px 12px 32px;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #2F363F;
+    text-transform: capitalize;
+    &-selected {
+      background-color: #EEEFF1;
+    }
+  }
+}

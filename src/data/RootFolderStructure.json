@@ -1,0 +1,82 @@
+{
+  "root": {
+    "type": "folder",
+    "size": "10000",
+    "creator": "Anshul",
+    "files": ["apps", "pictures", "videos", "docs"]
+  },
+  "apps": {
+    "type": "folder",
+    "size": "7000",
+    "creator": "Smith",
+    "dateCreated": "Sat Aug 1 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": ["a.apk", "b.ipa"]
+  },
+  "pictures": {
+    "type": "folder",
+    "size": "9000",
+    "creator": "Smith",
+    "dateCreated": "Sat Aug 2 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": []
+  },
+  "videos": {
+    "type": "folder",
+    "size": "9000",
+    "creator": "Smith",
+    "dateCreated": "Sat Aug 2 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": []
+  },
+  "docs": {
+    "type": "folder",
+    "size": "10",
+    "dateCreated": "Sat Aug 2 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": ["work", "c.pdf", "f.ts"]
+  },
+  "c.pdf": {
+    "type": "file",
+    "size": "10",
+    "creator": "Smith",
+    "dateCreated": "Sat Aug 2 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": [],
+    "path": "http://nosmalltask2.s3-website.ap-south-1.amazonaws.com/"
+  },
+  "f.ts": {
+    "type": "file",
+    "size": "10",
+    "creator": "Smith",
+    "dateCreated": "Sat Aug 2 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": [],
+    "path": "http://nosmalltask2.s3-website.ap-south-1.amazonaws.com/"
+  },
+  "work": {
+    "type": "folder",
+    "size": "10",
+    "dateCreated": "Sat Aug 2 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": ["hello.pdf"],
+    "path": "http://nosmalltask2.s3-website.ap-south-1.amazonaws.com/"
+  },
+  "hello.pdf": {
+    "type": "file",
+    "size": "10",
+    "creator": "Smith",
+    "dateCreated": "Sat Aug 2 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": [],
+    "path": "http://nosmalltask2.s3-website.ap-south-1.amazonaws.com/"
+  },
+  "a.apk": {
+    "type": "file",
+    "size": "20",
+    "creator": "Smith",
+    "dateCreated": "Sat Aug 1 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": [],
+    "path": "http://nosmalltask2.s3-website.ap-south-1.amazonaws.com/"
+  },
+  "b.ipa": {
+    "type": "file",
+    "size": "20",
+    "creator": "Smith",
+    "dateCreated": "Sat Aug 1 2019 15:41:25 GMT+0530 (India Standard Time)",
+    "files": [],
+    "path": "http://nosmalltask2.s3-website.ap-south-1.amazonaws.com/"
+  }
+}

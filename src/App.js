@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
 import './App.css';
-
-function App() {
+import Sidebars from './components/sidebar'
+import DirList from './components/DirList'
+import SearchField from "react-search-field";
+class App extends Component {
+  state = {
+    dirlists: [
+      { name: 'Song', id: 1 },
+      { name: 'Movies',  id: 2 },
+      { name: 'Videos',  id: 3 },
+      { name: 'My Test Folder',  id: 4 },
+      { name: 'Screenshots',  id: 5 }
+    ]
+  }
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Sidebars />
+    <SearchField placeholder="Search..." classNames="test-class"/>
+    <div className="App">
+     <DirList dirlists={this.state.dirlists} />
+      </div>
     </div>
   );
 }
-
+}
 export default App;

@@ -1,0 +1,24 @@
+.container {
+    max-width: 960px;
+    margin: auto;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+
+  h2 {
+    color: yellow;
+  }
+
+  .flex-grid {
+    color: white;
+    display: flex;
+    margin: auto -1rem 1rem;
+  }
+
+  .col {
+    display: flex;
+    height: 673px;
+    background-color:lightpink;
+    width: 256px ;
+    flex-direction: column;
+  }

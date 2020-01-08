@@ -1,0 +1,21 @@
+.file-manager__text-input {
+  &-container {
+    display: flex;
+    padding: 0 5px 0 5px;
+    background: #FFFFFF;
+    border: 1px solid #DDE0E4;
+    border-radius: 8px;
+  }
+  &-wrapper {
+    outline: 0;
+    border: 0;
+    padding: 6px 0 6px 0;
+    font-size: 16px;
+  }
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+  }
+}

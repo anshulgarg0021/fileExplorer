@@ -1,12 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Route, Switch } from 'react-router';
+import { Provider } from 'react-redux';
+import {
+  ConnectedRouter,
+  routerReducer,
+  routerMiddleware,
+} from 'react-router-redux';
+import createBrowserHistory from 'history/createBrowserHistory';
+import getRootStore from './store';
+import DashboardContainer from './DashboardContainer';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const history = createBrowserHistory();
+const middleware = routerMiddleware(history);
+const rootStore = getRootStore(routerReducer, middleware);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+class App extends Component {
+  render() {
+    return (
+      <ConnectedRouter history={history}>
+        {/* <Route path="/" component={DashboardContainer} /> */}
+        s
+      </ConnectedRouter>
+    );
+  }
+}
+
+
+ReactDOM.render(
+  <Provider store={rootStore}>
+    <ConnectedRouter history={history}>
+      <Switch>
+        <Route path="/" render={()=><div>some</div>} />
+      </Switch>
+
+    </ConnectedRouter>
+  </Provider>,
+  document.getElementById('root'),
+);
+
+
+// export default history;

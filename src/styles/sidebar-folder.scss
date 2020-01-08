@@ -1,0 +1,11 @@
+.file-manager__sidebar-folder {
+  &__container {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__folder-name {
+    text-transform: capitalize;
+    text-align: left;
+  }
+}

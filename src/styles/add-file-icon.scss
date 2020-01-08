@@ -1,0 +1,13 @@
+.file-manager__add-file {
+  &__container {
+    border: 3px dashed #DDE0E4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 50px;
+    margin: 20px 30px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,20 @@
+.file-manager__file {
+  &__container {
+    position: relative;
+  }
+  &__wrapper {
+    padding: 8px;
+    margin: 10px;
+  }
+  &__name {
+    font-size: 16px;
+    text-align: center;
+    color: #535B62;
+    margin: 0;
+  }
+  &__drop-down {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+  }
+}

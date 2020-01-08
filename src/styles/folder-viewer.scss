@@ -1,0 +1,17 @@
+.file-manager__folder-viewer{
+  &__container {
+    flex: 1 0 70%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  &__wrapper {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  &__empty-text {
+    margin: 20px;
+  }
+}
+

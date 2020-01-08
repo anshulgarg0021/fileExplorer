@@ -1,0 +1,26 @@
+.file-manager__file-info{
+  &__container {
+    display: flex;
+    width: 250px;
+    margin-bottom: 24px;
+  }
+  &__header {
+    text-align: right;
+    flex: 1 0 50%;
+    padding-right: 10px;
+    font-size: 16px;
+    color: #2F363F;
+  }
+  &__description {
+    text-align: left;
+    font-size: 16px;
+    color: #81878C;
+    flex: 1 0 50%;
+  }
+  &__file-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0;
+  }
+}
