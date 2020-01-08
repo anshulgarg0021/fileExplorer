@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Switch } from 'react-router';
+import { Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import {
   ConnectedRouter,
+  routerReducer,
   routerMiddleware,
-} from 'connected-react-router';
-import {routerReducer} from 'react-router-redux';
+} from 'react-router-redux';
 import createBrowserHistory from 'history/createBrowserHistory';
 import getRootStore from './store';
 import DashboardContainer from './DashboardContainer';
@@ -20,8 +20,7 @@ class App extends Component {
   render() {
     return (
       <ConnectedRouter history={history}>
-        {/* <Route path="/" component={DashboardContainer} /> */}
-        s
+        <Route path="/" component={DashboardContainer} />
       </ConnectedRouter>
     );
   }
@@ -30,12 +29,7 @@ class App extends Component {
 
 ReactDOM.render(
   <Provider store={rootStore}>
-    <ConnectedRouter history={history}>
-      <Switch>
-        <Route path="/" render={()=><div>some</div>} />
-      </Switch>
-
-    </ConnectedRouter>
+    <App />
   </Provider>,
   document.getElementById('root'),
 );
