@@ -4,9 +4,9 @@ import { Route, Switch } from 'react-router';
 import { Provider } from 'react-redux';
 import {
   ConnectedRouter,
-  routerReducer,
   routerMiddleware,
-} from 'react-router-redux';
+} from 'connected-react-router';
+import {routerReducer} from 'react-router-redux';
 import createBrowserHistory from 'history/createBrowserHistory';
 import getRootStore from './store';
 import DashboardContainer from './DashboardContainer';
