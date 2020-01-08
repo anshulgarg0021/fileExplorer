@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import '../styles/file-info.scss';
-import { faFile, faFolder } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import fileIcon from '../images/fileIcon.png'
+import folderIcon from '../images/folderIcon.png'
 import Modal from './Modal';
 
 const traverseKeys = {
@@ -21,11 +21,10 @@ const FileInfo = ({
 }) => (
   <Modal showModal={showInfoModal} onClose={onClose} headerText="File Info">
     <div className={FileInfo.styles.fileIcon}>
-      <FontAwesomeIcon
-        icon={fileInfo.type === 'folder' ? faFolder : faFile}
-        size="4x"
-        color={fileInfo.type === 'folder' ? '#ADD8E6' : '#FDCD53'}
-      />
+    <img
+            src={fileInfo.type === 'folder' ? folderIcon : fileIcon}
+            alt="loading"
+            />
     </div>
     <div className={FileInfo.styles.container}>
       <div className={FileInfo.styles.header}>

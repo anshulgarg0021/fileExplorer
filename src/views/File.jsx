@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFolder, faFile } from '@fortawesome/free-solid-svg-icons';
-
+import fileIcon from '../images/fileIcon.png'
+import folderIcon from '../images/folderIcon.png'
 import '../styles/file.scss';
 import Button from './Button';
 import FileInfo from './FileInfo';
@@ -64,10 +63,10 @@ const File = ({
         }}
       >
         <div className={File.styles.wrapper}>
-          <FontAwesomeIcon
-            icon={fileInfo.type === 'folder' ? faFolder : faFile}
-            size="4x"
-            color={fileInfo.type === 'folder' ? '#ADD8E6' : '#FDCD53'}
+          <img
+            src={fileInfo.type === 'folder' ? folderIcon : fileIcon}
+            alt="loading"
+
           />
           <p className={File.styles.fileName}>{fileName}</p>
         </div>
