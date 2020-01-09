@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import '../styles/folder-viewer.scss';
 import File from './File';
 import { filteredResult } from '../utils';
-/*import CreateFile from './CreateFile';*/
+import CreateFile from './CreateFile';
 import AddFileIcon from './AddFileIcon';
 
 /**
@@ -43,6 +43,12 @@ const FolderViewer = ({
         )) : <span className={FolderViewer.styles.emptyText}>The folder is empty.</span>}
         <AddFileIcon handleClick={() => setCreateFileModal(true)} />
        </div>
+       <CreateFile
+        addFile={addFile}
+        showCreateFileModal={showCreateFileModal}
+        setCreateFileModal={setCreateFileModal}
+        currentDirectory={currentDirectory}
+      />
     </div>
   );
 };

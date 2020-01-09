@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import '../styles/modal.scss';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import crossIcon from '../images/crossIcon.svg'
 import Button from './Button';
 
 /**
@@ -34,7 +33,7 @@ const Modal = ({
           <div className={styles.header}>
             <div className={styles.headerText}>{headerText}</div>
             <Button className={styles.headerIcon} handleClick={() => onClose(false)}>
-              <FontAwesomeIcon icon={faTimes} size="1x" color="#AFB2B6" />
+              <img src={crossIcon} alt="close"  />
             </Button>
           </div>
           <div className={styles.content}>

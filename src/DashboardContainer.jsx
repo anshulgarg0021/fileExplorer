@@ -23,7 +23,7 @@ const DashboardContainer = ({
   return (
     <div className={DashboardContainer.styles.container}>
       <Sidebar history={history} foldersData={foldersData} />
-     /* <FolderViewer
+      <FolderViewer
         currentDirectoryPathName={router.location.pathname}
         currentDirectory={path}
         currentFolderFiles={currentFolderFiles}
@@ -31,7 +31,7 @@ const DashboardContainer = ({
         addFile={addFile}
         removeFile={removeFile}
         history={history}
-      />*/
+      />
     </div>
   );
 };

@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import '../styles/navbar.scss';
-import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import upArrow from '../images/upArrow.png'
 import TextInput from './TextInput';
 import Button from './Button';
 
@@ -19,7 +18,7 @@ const Navbar = ({
       <Button
         handleClick={history.goBack}
       >
-        <FontAwesomeIcon icon={faArrowCircleUp} size="lg" color="#000" />
+        <img src={upArrow} alt="Back" />
       </Button>
       <div className={Navbar.styles.folderPositionText}>
         /Root

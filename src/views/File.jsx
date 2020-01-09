@@ -66,8 +66,7 @@ const File = ({
           <img
             src={fileInfo.type === 'folder' ? folderIcon : fileIcon}
             alt="loading"
-
-          />
+            />
           <p className={File.styles.fileName}>{fileName}</p>
         </div>
       </Button>

@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-
 import '../styles/text-input.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import searchIcon from '../images/searchIcon.svg'
+
 
 /**
  * This component is the generic text input component used through out.
@@ -25,7 +24,7 @@ const TextInput = ({
     <div className={containerStyles}>
       {showIcon && (
         <div className={TextInput.styles.icon}>
-          <FontAwesomeIcon icon={faSearch} size="1x" color="#AFB2B6" />
+          <img src={searchIcon} alt="search" />
         </div>
       )}
       <input

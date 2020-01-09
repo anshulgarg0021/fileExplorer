@@ -57,7 +57,6 @@ const addFile = (state, action) => {
   const { foldersData } = state;
   const { fileName, file, currentDirectory } = action;
   const currentFolderName = currentDirectory[currentDirectory.length - 1] || 'root';
-  console.log(currentDirectory);
   const newFoldersData = {
     ...foldersData,
     [fileName]: file,
@@ -81,6 +80,7 @@ const removeFile = (state, action) => {
     },
   };
   const { [fileName]: fileToBeRemove, ...newFoldersData } = removeFromDirectory;
+ console.log("dsd",removeFromDirectory);
   return { ...state, foldersData: newFoldersData };
 };
 

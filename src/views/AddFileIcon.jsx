@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { faAd } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import AddIcon from '../images/AddIcon.png'
 import '../styles/add-file-icon.scss';
 import Button from './Button';
 
@@ -12,10 +10,9 @@ import Button from './Button';
 
 const AddFileIcon = ({ handleClick }) => (
   <Button handleClick={handleClick} className={AddFileIcon.styles.container}>
-    <FontAwesomeIcon
-      icon={faAd}
-      size="2x"
-      color="#DDE0E4"
+    <img
+      src={AddIcon}
+      alt="loading"
     />
   </Button>
 );
