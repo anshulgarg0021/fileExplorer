@@ -22,7 +22,7 @@
     "react-router-config": "^5.1.1",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.6",
-    "react-scripts": "3.3.0",
+    "react-scripts": "5.0.1",
     "react-search-field": "^1.0.0",
     "react-sidebar": "^3.0.2",
     "redux": "^4.0.5",
